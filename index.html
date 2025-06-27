@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myfolio - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Myfolio</h1>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Blogs</a>
+        <a class="btn" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2><span class="highlight">Digital designer</span><br> crafting product<br> that people love</h2>
+        <p>I'm Kieran Parker — a designer working with startups to push creative boundaries and craft unique user experiences.</p>
+        <a class="btn" href="#">Book a FREE Call</a>
+      </div>
+      <img src="images/your-photo.jpg" alt="Your Photo" class="hero-img">
+    </section>
+
+    <section class="trusted">
+      <p>Trusted by industry leaders</p>
+      <div id="clients"></div>
+    </section>
+
+    <section class="services">
+      <h3>Services <span class="highlight">I believe in</span></h3>
+      <div class="cards" id="services"></div>
+    </section>
+  </div>
+
+  <script>
+    // Load dynamic data from JSON
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        // Load clients
+        const clientsDiv = document.getElementById('clients');
+        data.clients.forEach(client => {
+          const img = document.createElement('img');
+          img.src = client.logo;
+          img.alt = client.name;
+          clientsDiv.appendChild(img);
+        });
+
+        // Load services
+        const servicesDiv = document.getElementById('services');
+        data.services.forEach(service => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `<h4>${service.title}</h4><p>${service.description}</p>`;
+          servicesDiv.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>

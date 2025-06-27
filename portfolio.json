@@ -1,0 +1,23 @@
+{
+  "clients": [
+    { "name": "Octopus", "logo": "https://via.placeholder.com/80x40?text=Octopus" },
+    { "name": "Dulalix", "logo": "https://via.placeholder.com/80x40?text=Dulalix" },
+    { "name": "Poppers", "logo": "https://via.placeholder.com/80x40?text=Poppers" },
+    { "name": "MAYABI", "logo": "https://via.placeholder.com/80x40?text=Mayabi" },
+    { "name": "Pritom", "logo": "https://via.placeholder.com/80x40?text=Pritom" }
+  ],
+  "services": [
+    {
+      "title": "Website Design",
+      "description": "Create beautiful, responsive websites with a modern design approach."
+    },
+    {
+      "title": "SEO Marketing",
+      "description": "Improve your search engine ranking with proven strategies."
+    },
+    {
+      "title": "WF Development",
+      "description": "Develop optimized Webflow-based products for your business."
+    }
+  ]
+}

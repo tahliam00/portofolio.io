@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #e43df0, #ffadc9);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #0f0f0f;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.btn {
+  background: linear-gradient(to right, #ae6eff, #ff63ca);
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff4ddf;
+}
+
+.highlight {
+  color: #ff4ddf;
+}
+
+.trusted {
+  text-align: center;
+  color: #aaa;
+}
+
+.trusted img {
+  width: 80px;
+  margin: 1rem;
+}
+
+.services {
+  margin-top: 3rem;
+}
+
+.services h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
